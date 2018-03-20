@@ -1,14 +1,7 @@
-val derby = "org.apache.derby" % "derby" % "10.4.1.3"
+name := "HelloScala"
 
-lazy val commonSettings = Seq(
-  organization := "com.example",
-  version := "0.1.0",
-  scalaVersion := "2.12.4"
-)
+version := "0.1"
 
-lazy val root = (project in file("."))
-  .settings(
-    commonSettings,
-    name := "hello",
-    libraryDependencies += derby
-  )
+scalaVersion := "2.12.5"
+
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5" % "test"
