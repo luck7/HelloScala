@@ -6,8 +6,6 @@ import scala.collection.mutable
 
 /**
  * Spark Streaming整合Kafka
- *
- * @author zhiying.dong@hand-china.com 2019/05/24 16:54
  */
 object KafkaDirectWordCount {
   def main(args: Array[String]): Unit = {
